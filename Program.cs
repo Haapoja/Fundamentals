@@ -134,24 +134,70 @@ internal class IF_statement
 
 // ******* For Iteration *******
 
-internal class ForIteration
+//internal class ForIteration
+//{
+//    static void Main(string[] args)
+//    {
+//        for (int i = 0; i < 10; i++)
+//        {
+//            //Console.WriteLine(i);
+//            if (i == 7)
+//            {
+//                Console.WriteLine("found seven");
+//                break;
+//            }
+
+
+//        }
+
+
+//        Console.ReadLine();
+
+//    }
+//}
+
+// ******* Arrays *******
+
+internal class Arrays
 {
     static void Main(string[] args)
-    {
-        for (int i = 0; i < 10; i++)
-        {
-            //Console.WriteLine(i);
-            if (i == 7)
-            {
-                Console.WriteLine("found seven");
-                break;
-            }
-                
-           
-        }
+    {                   //new int[Num] num specify the the amount of items in the array
+        //int[] numbers = new int[5];
 
-       
+        //numbers[0] = 4;
+        //numbers[1] = 8;
+        //numbers[2] = 15;
+        //numbers[3] = 18;
+        //numbers[4] = 23;
+        //numbers[5] = 24; //index out of range
+
+        //Console.WriteLine(numbers[2]);
+        //Console.WriteLine(numbers.Length);
+        //Console.ReadLine();
+
+        //int[] numbers = new int[] { 5, 7, 8, 9, 10, 12 };
+        //string[] names = new string[] { "Bobby", "billy", "billy-bob", "Bobenheimer" };
+
+        //for (int i = 0; i < names.Length; i++)
+        //{
+        //    Console.WriteLine(names[i]);
+
+        //}
+        //Console.ReadLine();
+        //foreach (string name in names)
+        //{
+        //    Console.WriteLine(name);
+        //}
+        //Console.ReadLine();
+        //Reverse string with array
+        string quote = "I live in a constant state of fear and misery";
+        char[] charArray = quote.ToCharArray();
+        Array.Reverse(charArray);
+
+        foreach (char quoteChar in charArray)
+        {
+            Console.Write(quoteChar);
+        }
         Console.ReadLine();
-    
     }
 }
