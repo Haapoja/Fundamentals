@@ -76,58 +76,82 @@ internal class IF_statement
 */
 // ******* Operators, Expressions Statements *******
 
-internal class Operators
+//internal class Operators
+//{
+//    private static void Main(string[] args)
+//    {
+//        int x, y, a, b;
+//        x = 3;
+//        y = 5;
+//        a = 6;
+//        b = 1;
+
+//        //addition operator
+//        x = 3 + 2;
+//        //Subtraction operator 
+//        x = 5 - 2;
+//        //multiplication operator
+//        x = 2 * 2;
+//        //Division operator 
+//        x = 6 / 2;
+//        //Order of operations
+//        x = (x + y) * (b - a);
+
+//        // Equality operator
+//        if (x == y)
+//        {
+
+//        }
+//        // grater than operator
+//        if (x > y)
+//        {
+
+//        }
+//        //less than operator
+//        if (x < y)
+//        {
+
+//        }
+//        //Greater or equal to operator
+//        if (x <= y)
+//        {
+
+//        }
+//        //Conditional OR operator
+//        if ((x > y) || (a > b))
+//        {
+
+//        }
+//        //Conditional AND operator
+//        if ((x > y) && (a > b))
+//        {
+
+//        }
+//        //inline conditional operator
+//        string message = (x == 1) ? "Yes" : "No";
+//    }
+//}
+
+// ******* For Iteration *******
+
+internal class ForIteration
 {
-    private static void Main(string[] args)
+    static void Main(string[] args)
     {
-        int x, y, a, b;
-        x = 3;
-        y = 5;
-        a = 6;
-        b = 1;
-
-        //addition operator
-        x = 3 + 2;
-        //Subtraction operator 
-        x = 5 - 2;
-        //multiplication operator
-        x = 2 * 2;
-        //Division operator 
-        x = 6 / 2;
-        //Order of operations
-        x = (x + y) * (b - a);
-
-        // Equality operator
-        if (x == y)
+        for (int i = 0; i < 10; i++)
         {
-
+            //Console.WriteLine(i);
+            if (i == 7)
+            {
+                Console.WriteLine("found seven");
+                break;
+            }
+                
+           
         }
-        // grater than operator
-        if (x > y)
-        {
 
-        }
-        //less than operator
-        if (x < y)
-        {
-
-        }
-        //Greater or equal to operator
-        if (x <= y)
-        {
-
-        }
-        //Conditional OR operator
-        if ((x > y) || (a > b))
-        {
-
-        }
-        //Conditional AND operator
-        if ((x > y) && (a > b))
-        {
-
-        }
-        //inline conditional operator
-        string message = (x == 1) ? "Yes" : "No";
+       
+        Console.ReadLine();
+    
     }
 }
