@@ -158,46 +158,132 @@ internal class IF_statement
 
 // ******* Arrays *******
 
-internal class Arrays
+//internal class Arrays
+//{
+//    static void Main(string[] args)
+//    {                   //new int[Num] num specify the the amount of items in the array
+//        //int[] numbers = new int[5];
+
+//        //numbers[0] = 4;
+//        //numbers[1] = 8;
+//        //numbers[2] = 15;
+//        //numbers[3] = 18;
+//        //numbers[4] = 23;
+//        //numbers[5] = 24; //index out of range
+
+//        //Console.WriteLine(numbers[2]);
+//        //Console.WriteLine(numbers.Length);
+//        //Console.ReadLine();
+
+//        //int[] numbers = new int[] { 5, 7, 8, 9, 10, 12 };
+//        //string[] names = new string[] { "Bobby", "billy", "billy-bob", "Bobenheimer" };
+
+//        //for (int i = 0; i < names.Length; i++)
+//        //{
+//        //    Console.WriteLine(names[i]);
+
+//        //}
+//        //Console.ReadLine();
+//        //foreach (string name in names)
+//        //{
+//        //    Console.WriteLine(name);
+//        //}
+//        //Console.ReadLine();
+//        //Reverse string with array
+//        string quote = "I live in a constant state of fear and misery";
+//        char[] charArray = quote.ToCharArray();
+//        Array.Reverse(charArray);
+
+//        foreach (char quoteChar in charArray)
+//        {
+//            Console.Write(quoteChar);
+//        }
+//        Console.ReadLine();
+//    }
+//}
+
+
+// ******* Defining and calling methods *******
+
+//class Method
+//{
+//    static void Main()
+//    {
+//        HelloWorld();
+//        Console.ReadLine();
+
+//    }
+
+//    private static void HelloWorld()
+//    {
+//        Console.WriteLine("Hello world");
+//    }
+//}
+
+class Methods
 {
-    static void Main(string[] args)
-    {                   //new int[Num] num specify the the amount of items in the array
-        //int[] numbers = new int[5];
+    static void Main()
+    {
+        Console.WriteLine("Name game");
+       
+        Console.Write("Whats your name? ");
+        string firstName = Console.ReadLine();
 
-        //numbers[0] = 4;
-        //numbers[1] = 8;
-        //numbers[2] = 15;
-        //numbers[3] = 18;
-        //numbers[4] = 23;
-        //numbers[5] = 24; //index out of range
+        Console.Write("What is your last name? ");
+        string lastName = Console.ReadLine();
 
-        //Console.WriteLine(numbers[2]);
-        //Console.WriteLine(numbers.Length);
-        //Console.ReadLine();
+        Console.Write("In what city were you born? ");
+        string city = Console.ReadLine();
+        /*
+       char[] firstNameArray = firstName.ToCharArray();
+       Array.Reverse(firstNameArray);
 
-        //int[] numbers = new int[] { 5, 7, 8, 9, 10, 12 };
-        //string[] names = new string[] { "Bobby", "billy", "billy-bob", "Bobenheimer" };
+       char[] lastNameArray = lastName.ToCharArray();
+       Array.Reverse(lastNameArray);
 
-        //for (int i = 0; i < names.Length; i++)
-        //{
-        //    Console.WriteLine(names[i]);
+       char[] cityArray = city.ToCharArray();
+       Array.Reverse(cityArray);
 
-        //}
-        //Console.ReadLine();
-        //foreach (string name in names)
-        //{
-        //    Console.WriteLine(name);
-        //}
-        //Console.ReadLine();
-        //Reverse string with array
-        string quote = "I live in a constant state of fear and misery";
-        char[] charArray = quote.ToCharArray();
-        Array.Reverse(charArray);
+       string result = "";
 
-        foreach (char quoteChar in charArray)
-        {
-            Console.Write(quoteChar);
-        }
-        Console.ReadLine();
+       foreach (char item in firstNameArray)
+       {
+           result += item;
+       }
+       result += " ";
+
+       foreach (char item in lastNameArray)
+       {
+           result += item;
+       }
+       result += " ";
+
+       foreach (char item in cityArray)
+       {
+           result += item;
+       }
+
+       Console.WriteLine("Results: " + result);
+
+
+       */
+        
+        
+       DisplayResult(ReverseString(firstName), ReverseString(lastName), ReverseString(city));
+
+       Console.ReadLine();
+    }
+    private static string ReverseString(string message)
+    {
+        
+        char[] messageArray = message.ToCharArray();
+        Array.Reverse(messageArray);
+        return String.Concat(messageArray);
+    
+    }
+    private static void DisplayResult(string reversedFirstName, string reversedLasttName, string reversedCity)
+    {
+        Console.Write("Results: ");
+        Console.Write(String.Format("{0} {1} {2}", reversedFirstName, reversedLasttName, reversedCity));
     }
 }
